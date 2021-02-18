@@ -1,5 +1,7 @@
 <?php
 // Je hebt een database nodig om dit bestand te gebruiken....
+//ARMAN: je had hier een include naar de database.php file moeten maken waar de gegevens van de database instaan zoals username en ww
+include("database.php");
 
 if (!isset($db_conn)) { //deze if-statement checked of er een database-object aanwezig is. Kun je laten staan.
     return;
@@ -9,16 +11,17 @@ $database_gegevens = null;
 $poolIsChecked = false;
 $bathIsChecked = false;
 
-$sql = ""; //Selecteer alle huisjes uit de database
+//ARMAN hier moet je de SQL statement neer zetten om alle huisjes uit een database te halen LET op de '' om homes!
+$sql = "SELECT * FROM `homes`"; //Selecteer alle huisjes uit de database
 
 if (isset($_GET['filter_submit'])) {
 
     if ($_GET['faciliteiten'] == "ligbad") { // Als ligbad is geselecteerd filter dan de zoekresultaten
         $bathIsChecked = true;
-
+//ARMAN deze sql statement moet je nog aanvullen
         $sql = ""; // query die zoekt of er een BAD aanwezig is.
     }
-
+//ARMAN deze sql statement moet je nog aanvullen
     if ($_GET['faciliteiten'] == "zwembad") {
         $poolIsChecked = true;
 
