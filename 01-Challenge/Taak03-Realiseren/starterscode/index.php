@@ -67,16 +67,29 @@ if (is_object($db_conn->query($sql))) { //deze if-statement controleert of een s
         <div class="mid">
             <div class="voordelen">
                 <h1>Alle voordelen van Quattro.</h1>
-                <div class="voordeel">Voordeel1</div>
-                <div class="voordeel">Voordeel1</div>
-                <div class="voordeel">Voordeel1</div>
-                <div class="voordeel">Voordeel1</div>
-                <div class="voordeel">Voordeel1</div>
-                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel"><p>Voordeel1</p></div>
             </div>
+
+            <div id="mapid"></div>
+
             <div class="locaties">
+            <h1>Onze prachtige locaties</h1>
                 <div class="locatie1">
-                    <h1>Onze prachtige locaties</h1>
+                    <h2>IJmuiden Cottage</h2>
+                </div>
+                <div class="locatie2">
+                    <h2>Assen Bungalow</h2>
+                </div>
+                <div class="locatie3">
+                    <h2>Espelo Entree</h2>
+                </div>
+                <div class="locatie4">
+                    <h2>Weustenrade Woning</h2>
                 </div>
             </div>
         </div>
