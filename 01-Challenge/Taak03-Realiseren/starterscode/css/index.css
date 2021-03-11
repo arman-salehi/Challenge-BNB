@@ -49,3 +49,44 @@ footer div {
     letter-spacing: 0.15em;
 
 }
+
+.website {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* BEGIN */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    border-top: 10px solid #E76F51;
+    padding: 20px;
+    color: #2C9D8F;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 50vw;
+}
+
+.text-over-image h1 {
+    color: red;
+    position: absolute;
+    font-size: 70px;
+}
+
+.header {
+    margin-top: 100px;
+}

@@ -18,10 +18,10 @@ if (isset($_GET['filter_submit'])) {
 
     if ($_GET['faciliteiten'] == "ligbad") { // Als ligbad is geselecteerd filter dan de zoekresultaten
         $bathIsChecked = true;
-//ARMAN deze sql statement moet je nog aanvullen
+        //ARMAN deze sql statement moet je nog aanvullen
         $sql = ""; // query die zoekt of er een BAD aanwezig is.
     }
-//ARMAN deze sql statement moet je nog aanvullen
+    //ARMAN deze sql statement moet je nog aanvullen
     if ($_GET['faciliteiten'] == "zwembad") {
         $poolIsChecked = true;
 
@@ -52,6 +52,40 @@ if (is_object($db_conn->query($sql))) { //deze if-statement controleert of een s
 </head>
 
 <body>
+    <div class="navbar">
+        <h1>Quattro</h1>
+    </div>
+    <div class="parent">
+        <div class="header">
+            <div class="text-over-image">
+                <h1>Vind jouw perfecte verblijf, nu op Quattro.</h1>
+                <img src="../starterscode/images/header.jpg" alt="Jouw verblijf, Quattro." class="header-img">
+            </div>
+            <a href="#" class="button1">Button1</a>
+            <a href="#" class="button2">Button2</a>
+        </div>
+        <div class="mid">
+            <div class="voordelen">
+                <h1>Alle voordelen van Quattro.</h1>
+                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel">Voordeel1</div>
+                <div class="voordeel">Voordeel1</div>
+            </div>
+            <div class="locaties">
+                <div class="locatie1">
+                    <h1>Onze prachtige locaties</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="website">
     <header>
         <h1>Quattro Cottage Rental</h1>
     </header>
@@ -165,6 +199,7 @@ if (is_object($db_conn->query($sql))) { //deze if-statement controleert of een s
         ];
     </script>
     <script src="js/place_markers.js"></script>
+    </div>
 </body>
 
 </html>
