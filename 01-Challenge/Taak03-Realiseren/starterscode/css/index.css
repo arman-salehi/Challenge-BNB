@@ -6,6 +6,7 @@
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
+    border-radius: 20px;
 }
 
 main {
@@ -69,8 +70,8 @@ footer div {
 }
 
 .parent {
-   /* margin-left: 100px;
-    margin-right: 100px;*/
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .navbar {
@@ -98,7 +99,7 @@ footer div {
 }
 
 .voordeel p {
-    background-color: blue;
+    background-color: #F4A261;
     padding: 15px;
     margin-right: 20px;
     border-radius: 100px;
@@ -114,3 +115,58 @@ footer div {
 .voordelen {
     margin-top: 100px;
 }
+
+.locatie1 {
+    background-repeat: no-repeat, repeat;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.locatie2 {
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.locatie3 {
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.locatie4 {
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.locatie-boven {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.locatie-onder {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.locatie1,.locatie2,.locatie3,.locatie4 {
+    border-radius: 20px;
+}
+
+.locatie {
+    border-radius: 15px;
+    max-width: 570px;
+    max-height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+

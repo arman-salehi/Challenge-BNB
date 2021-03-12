@@ -67,29 +67,49 @@ if (is_object($db_conn->query($sql))) { //deze if-statement controleert of een s
         <div class="mid">
             <div class="voordelen">
                 <h1>Alle voordelen van Quattro.</h1>
-                <div class="voordeel"><p>Voordeel1</p></div>
-                <div class="voordeel"><p>Voordeel1</p></div>
-                <div class="voordeel"><p>Voordeel1</p></div>
-                <div class="voordeel"><p>Voordeel1</p></div>
-                <div class="voordeel"><p>Voordeel1</p></div>
-                <div class="voordeel"><p>Voordeel1</p></div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
+                <div class="voordeel">
+                    <p>Voordeel1</p>
+                </div>
             </div>
 
             <div id="mapid"></div>
 
             <div class="locaties">
-            <h1>Onze prachtige locaties</h1>
-                <div class="locatie1">
-                    <h2>IJmuiden Cottage</h2>
+                <h1>Onze prachtige locaties</h1>
+                <div class="locatie-boven">
+                    <div class="locatie1">
+                        <img src="./images/assen.png" alt="" class="locatie">
+                        <h2>IJmuiden Cottage</h2>
+                    </div>
+                    <div class="locatie2">
+                        <img src="./images/assen.png" alt="" class="locatie">
+                        <h2>Assen Bungalow</h2>
+                    </div>
                 </div>
-                <div class="locatie2">
-                    <h2>Assen Bungalow</h2>
-                </div>
-                <div class="locatie3">
-                    <h2>Espelo Entree</h2>
-                </div>
-                <div class="locatie4">
-                    <h2>Weustenrade Woning</h2>
+                <div class="locatie-onder">
+                    <div class="locatie3">
+                        <img src="./images/assen.png" alt="" class="locatie">
+                        <h2>Espelo Entree</h2>
+                    </div>
+                    <div class="locatie4">
+                        <img src="./images/assen.png" alt="" class="locatie">  
+                        <h2>Weustenrade Woning</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,120 +118,120 @@ if (is_object($db_conn->query($sql))) { //deze if-statement controleert of een s
 
 
 
-<div class="website">
-    <header>
-        <h1>Quattro Cottage Rental</h1>
-    </header>
-    <main>
-        <div class="left">
-            <div id="mapid"></div>
-            <div class="book">
-                <h3>Reservering maken</h3>
-                <div class="form-control">
-                    <label for="aantal_personen">Vakantiehuis</label>
-                    <select name="gekozen_huis" id="gekozen_huis">
-                        <option value="1">IJmuiden Cottage</option>
-                        <option value="2">Assen Bungalow</option>
-                        <option value="3">Espelo Entree</option>
-                        <option value="4">Weustenrade Woning</option>
-                    </select>
-                </div>
-                <div class="form-control">
-                    <label for="aantal_personen">Aantal personen</label>
-                    <input type="number" name="aantal_personen" id="aantal_personen">
-                </div>
-                <div class="form-control">
-                    <label for="aantal_dagen">Aantal dagen</label>
-                    <input type="number" name="aantal_dagen" id="aantal_dagen">
-                </div>
-                <div class="form-control">
-                    <h5>Beddengoed</h5>
-                    <label for="beddengoed_ja">Ja</label>
-                    <input type="radio" id="beddengoed_ja" name="beddengoed" value="ja">
-                    <label for="beddengoed_nee">Nee</label>
-                    <input type="radio" id="beddengoed_nee" name="beddengoed" value="nee">
-                </div>
-                <button>Reserveer huis</button>
-            </div>
-            <div class="currentBooking">
-                <div class="bookedHome"></div>
-                <div class="totalPriceBlock">Totale prijs &euro;<span class="totalPrice">0.00</span></div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="filter-box">
-                <form class="filter-form">
+    <div class="website">
+        <header>
+            <h1>Quattro Cottage Rental</h1>
+        </header>
+        <main>
+            <div class="left">
+                <div id="mapid"></div>
+                <div class="book">
+                    <h3>Reservering maken</h3>
                     <div class="form-control">
-                        <a href="index.php">Reset Filters</a>
+                        <label for="aantal_personen">Vakantiehuis</label>
+                        <select name="gekozen_huis" id="gekozen_huis">
+                            <option value="1">IJmuiden Cottage</option>
+                            <option value="2">Assen Bungalow</option>
+                            <option value="3">Espelo Entree</option>
+                            <option value="4">Weustenrade Woning</option>
+                        </select>
                     </div>
                     <div class="form-control">
-                        <label for="ligbad">Ligbad</label>
-                        <input type="radio" id="ligbad" name="faciliteiten" value="ligbad" <?php if ($bathIsChecked) echo 'checked' ?>>
+                        <label for="aantal_personen">Aantal personen</label>
+                        <input type="number" name="aantal_personen" id="aantal_personen">
                     </div>
                     <div class="form-control">
-                        <label for="zwembad">Zwembad</label>
-                        <input type="radio" id="zwembad" name="faciliteiten" value="zwembad" <?php if ($poolIsChecked) echo 'checked' ?>>
+                        <label for="aantal_dagen">Aantal dagen</label>
+                        <input type="number" name="aantal_dagen" id="aantal_dagen">
                     </div>
-                    <button type="submit" name="filter_submit">Filter</button>
-                </form>
-                <div class="homes-box">
-                    <?php if (isset($database_gegevens) && $database_gegevens != null) : ?>
-                        <?php foreach ($database_gegevens as $huisje) : ?>
-                            <h4>
-                                <?php echo $huisje['name']; ?>
-                            </h4>
-
-                            <p>
-                                <?php echo $huisje['description'] ?>
-                            </p>
-                            <div class="kenmerken">
-                                <h6>Kenmerken</h6>
-                                <ul>
-
-                                    <?php
-                                    if ($huisje['bath_present'] ==  1) {
-                                        echo "<li>Er is ligbad!</li>";
-                                    }
-                                    ?>
-
-
-                                    <?php
-                                    if ($huisje['pool_present'] ==  1) {
-                                        echo "<li>Er is zwembad!</li>";
-                                    }
-                                    ?>
-
-                                </ul>
-
-                            </div>
-
-                        <?php endforeach; ?>
-                    <?php endif; ?>
+                    <div class="form-control">
+                        <h5>Beddengoed</h5>
+                        <label for="beddengoed_ja">Ja</label>
+                        <input type="radio" id="beddengoed_ja" name="beddengoed" value="ja">
+                        <label for="beddengoed_nee">Nee</label>
+                        <input type="radio" id="beddengoed_nee" name="beddengoed" value="nee">
+                    </div>
+                    <button>Reserveer huis</button>
                 </div>
-
+                <div class="currentBooking">
+                    <div class="bookedHome"></div>
+                    <div class="totalPriceBlock">Totale prijs &euro;<span class="totalPrice">0.00</span></div>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div></div>
-        <div>copyright Quattro Rentals BV.</div>
-        <div></div>
+            <div class="right">
+                <div class="filter-box">
+                    <form class="filter-form">
+                        <div class="form-control">
+                            <a href="index.php">Reset Filters</a>
+                        </div>
+                        <div class="form-control">
+                            <label for="ligbad">Ligbad</label>
+                            <input type="radio" id="ligbad" name="faciliteiten" value="ligbad" <?php if ($bathIsChecked) echo 'checked' ?>>
+                        </div>
+                        <div class="form-control">
+                            <label for="zwembad">Zwembad</label>
+                            <input type="radio" id="zwembad" name="faciliteiten" value="zwembad" <?php if ($poolIsChecked) echo 'checked' ?>>
+                        </div>
+                        <button type="submit" name="filter_submit">Filter</button>
+                    </form>
+                    <div class="homes-box">
+                        <?php if (isset($database_gegevens) && $database_gegevens != null) : ?>
+                            <?php foreach ($database_gegevens as $huisje) : ?>
+                                <h4>
+                                    <?php echo $huisje['name']; ?>
+                                </h4>
 
-    </footer>
-    <script src="js/map_init.js"></script>
-    <script>
-        // De verschillende markers moeten geplaatst worden. Vul de longitudes en latitudes uit de database hierin
-        var coordinates = [
+                                <p>
+                                    <?php echo $huisje['description'] ?>
+                                </p>
+                                <div class="kenmerken">
+                                    <h6>Kenmerken</h6>
+                                    <ul>
+
+                                        <?php
+                                        if ($huisje['bath_present'] ==  1) {
+                                            echo "<li>Er is ligbad!</li>";
+                                        }
+                                        ?>
 
 
-        ];
+                                        <?php
+                                        if ($huisje['pool_present'] ==  1) {
+                                            echo "<li>Er is zwembad!</li>";
+                                        }
+                                        ?>
 
-        var bubbleTexts = [
+                                    </ul>
+
+                                </div>
+
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div></div>
+            <div>copyright Quattro Rentals BV.</div>
+            <div></div>
+
+        </footer>
+        <script src="js/map_init.js"></script>
+        <script>
+            // De verschillende markers moeten geplaatst worden. Vul de longitudes en latitudes uit de database hierin
+            var coordinates = [
 
 
-        ];
-    </script>
-    <script src="js/place_markers.js"></script>
+            ];
+
+            var bubbleTexts = [
+
+
+            ];
+        </script>
+        <script src="js/place_markers.js"></script>
     </div>
 </body>
 
